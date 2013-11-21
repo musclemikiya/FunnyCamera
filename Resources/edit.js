@@ -3,7 +3,7 @@
  */
 (function(){
 	var win = Ti.UI.currentWindow;
-	var imgs = ['christmas.jpeg', 'img2.jpg', 'img3.jpg'];
+	var imgs = ['christmas.jpg', 'christmas.jpg', 'christmas.jpg'];
 	
 	// 画像プレビュー用
 	var scrollableView = Ti.UI.createScrollableView({
@@ -20,12 +20,53 @@
 	    	backgroundImage: "img/"+imgs[i]
 		});
 		v.add(Ti.UI.createImageView({
-			width: 50,
-			height: 50,
-			backgroundImage: "img/dark_more.png"
+			top: 30,
+			left:200,
+			width: 100,
+			height: 150,
+			backgroundImage: "img/fukuda.jpeg"
 		}));
+		v.addEventListener('click', function(e){
+			Ti.Media.openPhotoGallery({
+				success: function(e) {
+					var photo = e.media;
+					var imgView = Ti.UI.createImageView({
+						image: photo,
+						top: 30,
+						left:200,
+						width: 100,
+						height: 150
+					});
+					win.add(imgView);
+				},
+				error: function(event) {
+					
+				},
+				cancel: function(event) {
+					
+				},
+				allowEditing: true,
+				// 選択可能なメディア種別を配列で指定
+			    mediaTypes:[Ti.Media.MEDIA_TYPE_VIDEO,Ti.Media.MEDIA_TYPE_PHOTO]
+			});
+		});
 		scrollableView.addView(v);
 	}
+	// 作成完了ボタン
+	var right_button = Ti.UI.createButton({title:'完了'});
+	right_button.addEventListener('click', function(e){
+		alert('完成しました！');
+		Ti.UI.currentTab.open(
+			Ti.UI.createWindow({
+				title: '完成プレビュー',
+				backgroundColor: '#fff',
+				url: 'finish.js',
+				tabBarHidden: true
+			})
+		);
+	});
+	win.rightNavButton = right_button;
+	
 	win.add(scrollableView);
 	win.open();
 })();

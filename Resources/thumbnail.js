@@ -10,21 +10,25 @@
 	    width: 150,
 	    top: 0,
 	    left:150,
-	    image:'img/christmas.jpeg'
+	    image:'img/christmas.jpg'
 	});
 	win.add(image);
 	
 	// 閉じるボタン
 	var image2 = Titanium.UI.createImageView({
 	    top: 0,
-	    left:300,
+	    left:280,
+	    height: 50,
+		width: 50,
 	    image:'img/dark_x-2.png'
 	});
 	
 	// 次へのボタン
 	var more_img = Ti.UI.createImageView({
 		top: 400,
-		left:300,
+		left: 280,
+		height: 50,
+		width: 50,
 		image: 'img/dark_more.png'
 	});
 	
@@ -61,7 +65,7 @@ var modal;
 		    height: 450,
 		    cacheSize : 3
 		});
-		var imgs = ['christmas.jpeg', 'img2.jpg', 'img3.jpg'];
+		var imgs = ['christmas.jpg', 'img2.jpg', 'img3.jpg'];
 		
 		for (var i=0;i<imgs.length;i++) {
 			var v = Ti.UI.createImageView({
