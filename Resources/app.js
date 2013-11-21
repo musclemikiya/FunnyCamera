@@ -1,28 +1,17 @@
 // window 設定
 Titanium.UI.setBackgroundColor('#000');
-var win = Titanium.UI.createWindow({
-    title:'CameraTest',
-    backgroundColor:'red'
+var tabGroup = Titanium.UI.createTabGroup();
+// alert(111);
+var tab1 = Ti.UI.createTab({
+	title: 'テンプレート一覧',
+	window:	Ti.UI.createWindow({
+			title: 'テンプレート一覧',
+			backgroundColor: '#fff',
+			url: 'thumbnail.js',
+			tabBarHidden: true
+	})
 });
 
-// カメラ起動ボタン
-var b1 = Titanium.UI.createButton({
-        title:'camera start',
-        height:40,
-        width:200,
-        top:10,
-});
-
-//クリック時の動作
-b1.addEventListener('click', function(e)
-{
-        var win = Titanium.UI.createWindow({
-                url:"camera.js",
-                title:"camera",
-        });
-        win.open(win,{animated:true});
-});
-//windowにボタン追加
-win.add(b1);
 //window open
-win.open();
+tabGroup.addTab(tab1);
+tabGroup.open();
