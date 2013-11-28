@@ -11,7 +11,7 @@
 	    height: 450,
 	    cacheSize : 3
 	});
-	var imgs = ['christmas.jpg', 'img2.jpg', 'img3.jpg'];
+	var imgs = ['christmas.jpg', 'christmas2.jpg', 'img3.jpg'];
 	
 	for (var i=0;i<imgs.length;i++) {
 		var v = Ti.UI.createImageView({

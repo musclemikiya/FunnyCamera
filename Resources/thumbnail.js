@@ -4,15 +4,36 @@
 		
 	});
 	
-	// サムネ用の画像群
-	var image = Titanium.UI.createImageView({
-	    height: 150,
-	    width: 150,
-	    top: 0,
-	    left:150,
-	    image:'img/christmas.jpg'
-	});
-	win.add(image);
+	// サムネイル用画像
+	var imgs = ['christmas.jpg', 'christmas2.jpg', 'christmas2.jpg', 'christmas2.jpg', 'christmas2.jpg', 'christmas2.jpg'];
+	var tops = [0, 0, 130, 130, 130, 130];
+	var len = imgs.length;
+	for (var l=0;l<len;l++){
+		if ((l+1)%2 == 0) {
+			var options = {
+				height: 150,
+			    width: 150,
+			    top: tops[l],
+			    right: 5,
+			    image:'img/'+imgs[l]
+			};
+		} else{
+			var options = {
+				height: 150,
+			    width: 150,
+			    top: tops[l],
+			    left: 5,
+			    image:'img/'+imgs[l]
+			};
+		}
+		Ti.API.info(options);
+		var image = Ti.UI.createImageView(options);
+		image.addEventListener('click', function(e){
+			show_modal(e);
+		});
+		win.add(image);
+	}
+	
 	
 	// 閉じるボタン
 	var image2 = Titanium.UI.createImageView({
@@ -50,28 +71,28 @@
 var modal;
 
 	// サムネがクリックされた時
-	image.addEventListener('click', function(e){
+	var show_modal = function(e){
 		modal = Ti.UI.createWindow({
-			title: 'テンプレートプレビュー',
-			backgroundColor: 'white',
-			navBarHidden: true
+	        title: 'Modal Window',
+	        backgroundColor:'#000', 
+	        opacity:0.60
 		});
 		
 		// 画像プレビュー用
 		var scrollableView = Ti.UI.createScrollableView({
-			top: 0,
-			left : 0,
-		    width : 310,
-		    height: 450,
+			top: 50,
+			left : 50,
+		    width : 250,
+		    height: 300,
 		    cacheSize : 3
 		});
-		var imgs = ['christmas.jpg', 'img2.jpg', 'img3.jpg'];
+		var imgs = ['christmas.jpg', 'christmas2.jpg', 'img3.jpg'];
 		
 		for (var i=0;i<imgs.length;i++) {
 			var v = Ti.UI.createImageView({
-				 width : 310,
-		    	height: 450,
-		    	backgroundImage: "img/"+imgs[i]
+				width : 200,
+		    	height: 250,
+		    	image: "img/"+imgs[i]
 			});
 			scrollableView.addView(v);
 		}
@@ -86,11 +107,15 @@ var modal;
 			modal.close();
 		});
 		
-		modal.open({
-			modal:true,
-		    modalTransitionStyle: Ti.UI.iPhone.MODAL_TRANSITION_STYLE_CROSS_DISSOLVE,
-		    modalStyle: Ti.UI.iPhone.MODAL_PRESENTATION_FORMSHEET
-		});
-	});
+		var Modal = require('popUpPreview');
+		Modal.showInfo("This is an information modal view");
+		
+		// modal.open({
+			// modal:true,
+		    // modalTransitionStyle: Ti.UI.iPhone.MODAL_TRANSITION_STYLE_COVER_VERTICAL,
+		    // modalStyle: Ti.UI.iPhone.MODAL_PRESENTATION_FORMSHEET,
+		    // navBarHidden:true
+		// });
+	};
 	// win.open();
 })();

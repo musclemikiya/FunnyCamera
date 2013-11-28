@@ -3,7 +3,7 @@
  */
 (function(){
 	var win = Ti.UI.currentWindow;
-	var imgs = ['christmas.jpg', 'christmas.jpg', 'christmas.jpg'];
+	var imgs = ['christmas.jpg', 'christmas2.jpg', 'christmas.jpg'];
 	
 	// 画像プレビュー用
 	var scrollableView = Ti.UI.createScrollableView({
@@ -26,30 +26,6 @@
 			height: 150,
 			backgroundImage: "img/fukuda.jpeg"
 		}));
-		v.addEventListener('click', function(e){
-			Ti.Media.openPhotoGallery({
-				success: function(e) {
-					var photo = e.media;
-					var imgView = Ti.UI.createImageView({
-						image: photo,
-						top: 30,
-						left:200,
-						width: 100,
-						height: 150
-					});
-					win.add(imgView);
-				},
-				error: function(event) {
-					
-				},
-				cancel: function(event) {
-					
-				},
-				allowEditing: true,
-				// 選択可能なメディア種別を配列で指定
-			    mediaTypes:[Ti.Media.MEDIA_TYPE_VIDEO,Ti.Media.MEDIA_TYPE_PHOTO]
-			});
-		});
 		scrollableView.addView(v);
 	}
 	// 作成完了ボタン
@@ -67,6 +43,29 @@
 	});
 	win.rightNavButton = right_button;
 	
+	/**
+	 * toolbar
+	 */
+	var toolbar_space = Ti.UI.createButton({
+		systemButton: Ti.UI.iPhone.SystemButton.FLEXIBLE_SPACE
+	});
+	// カメラ起動ボタン
+	var camera = Ti.UI.createButton({
+		systemButton: Ti.UI.iPhone.SystemButton.CAMERA
+	});
+	var Camera = require('camera');
+	camera.addEventListener('click', function(e){
+		Camera.showCamera();
+	});
+	// カメラロール起動
+	var camera_roll = Ti.UI.createButton({
+		systemButton: Ti.UI.iPhone.SystemButton.ORGANIZE
+	});
+	camera_roll.addEventListener('click', function(e){
+		Camera.showCameraRoll();
+	});
+	win.setToolbar([toolbar_space,camera,toolbar_space,camera_roll,toolbar_space]);
 	win.add(scrollableView);
+	
 	win.open();
 })();
