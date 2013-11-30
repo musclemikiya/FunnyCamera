@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+provisioning_profiles/adhoc/24A37719-7E87-453C-9204-10E7727A75AD/appid=com.FunnyCamera
+provisioning_profiles/adhoc/24A37719-7E87-453C-9204-10E7727A75AD/name=Musclehustle
+provisioning_profiles/adhoc/24A37719-7E87-453C-9204-10E7727A75AD/uuid=24A37719-7E87-453C-9204-10E7727A75AD
+provisioning_profiles/development/99223686-803B-4F90-93E0-06BC73BDAA66/appid=*
+provisioning_profiles/development/99223686-803B-4F90-93E0-06BC73BDAA66/name=iOS Team Provisioning Profile\: *
+provisioning_profiles/development/99223686-803B-4F90-93E0-06BC73BDAA66/uuid=99223686-803B-4F90-93E0-06BC73BDAA66

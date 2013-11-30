@@ -9,8 +9,8 @@ exports.showCamera =function() {
                 {
                         // カメラで撮った画像を表示する
                         var imageView = Ti.UI.createImageView({
-                                top: 30,
-								left:200,
+                                top: 250,
+								left:10,
 								width: 100,
 								height: 150,                    
                                 image:event.media
@@ -59,7 +59,10 @@ exports.showCameraRoll = function() {
                 var photo = e.media;
                 var imgView = Ti.UI.createImageView({
                         image: photo,
-                        width:200
+                        top: 250,
+						left:10,
+						width: 100,
+						height: 150
                 });
                 win.add(imgView);
         },

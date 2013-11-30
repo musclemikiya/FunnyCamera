@@ -9,7 +9,7 @@
         <target device="android">false</target>
     </deployment-targets>
     <sdk-version>2.1.4.GA</sdk-version>
-    <id>com.camera</id>
+    <id>com.FunnyCamera</id>
     <name>FunnyCamera</name>
     <version>1.0</version>
     <publisher>pawpuro10</publisher>

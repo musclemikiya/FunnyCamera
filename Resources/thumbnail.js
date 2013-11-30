@@ -5,7 +5,7 @@
 	});
 	
 	// サムネイル用画像
-	var imgs = ['christmas.jpg', 'christmas2.jpg', 'christmas2.jpg', 'christmas2.jpg', 'christmas2.jpg', 'christmas2.jpg'];
+	var imgs = ['christmas.jpg', 'christmas2.jpg', 'christmas2.jpg', 'christmas3.gif', 'christmas3.gif', 'christmas2.jpg'];
 	var tops = [0, 0, 130, 130, 130, 130];
 	var len = imgs.length;
 	for (var l=0;l<len;l++){
@@ -26,7 +26,6 @@
 			    image:'img/'+imgs[l]
 			};
 		}
-		Ti.API.info(options);
 		var image = Ti.UI.createImageView(options);
 		image.addEventListener('click', function(e){
 			show_modal(e);
@@ -86,7 +85,7 @@ var modal;
 		    height: 300,
 		    cacheSize : 3
 		});
-		var imgs = ['christmas.jpg', 'christmas2.jpg', 'img3.jpg'];
+		var imgs = ['christmas.jpg', 'christmas2.jpg', 'christmas3.gif'];
 		
 		for (var i=0;i<imgs.length;i++) {
 			var v = Ti.UI.createImageView({

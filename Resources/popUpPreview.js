@@ -1,44 +1,41 @@
 /**
- * Modal Info View module - Titanium JS
- * @author César Cavazos - @cesarcvz
- * Based on: https://github.com/appcelerator/KitchenSink
- */
-/**
- * Open an infomation modal anywhere in hour app
- * @param {String} text
- * @param {Object} params
+ * Modal生成
+ * @param {Object} text
  */
 exports.showInfo = function(text) {
     //TODO: Add params like images/icons
     var infoWindow = Titanium.UI.createWindow({
-        height:450,
+    	title: 'プレビュー',
         width:300,
+        height:400,	
+       	borderRadius: 10,
+       	backgroundColor: 'white',
+       	opacity: 0.9
     });
     
     // 画像プレビュー用
 	var scrollableView = Ti.UI.createScrollableView({
-	    width : 400,
-	    height: 300,
+	    width : 300,
+	    height: 200,
 	    cacheSize : 3
 	});
+	
+	/*
+	 * toolbar
+	 */
+	var toolbar_space = Ti.UI.createButton({
+		systemButton: Ti.UI.iPhone.SystemButton.FLEXIBLE_SPACE
+	});
 	var cancelButton = Titanium.UI.createButton({
-	   title: 'Cancel',
-	   top: 400,
-	   width: 50,
-	   height: 50,
-	   left:10
+		systemButton: Ti.UI.iPhone.SystemButton.CANCEL
 	});
 	cancelButton.addEventListener('click',function(e)
 	{
 	   infoWindow.close();
 	});
-	
+	// infoWindow.add(cancelButton);
 	var okayButton = Titanium.UI.createButton({
-	   title: 'OK',
-	   top: 400,
-	   width: 50,
-	   height: 50,
-	   right:10
+	   systemButton: Ti.UI.iPhone.SystemButton.ACTION
 	});
 	okayButton.addEventListener('click',function(e)
 	{
@@ -52,26 +49,31 @@ exports.showInfo = function(text) {
 			})
 		);
 	});
-	
-	var imgs = ['christmas.jpg', 'christmas2.jpg', 'img3.jpg'];
+	// infoWindow.add(okayButton);
+	var imgs = ['christmas.jpg', 'christmas2.jpg', 'christmas3.gif'];
 	
 	for (var i=0;i<imgs.length;i++) {
 		var v = Ti.UI.createImageView({
-			width : 400,
-	    	height: 300,
-	    	image: "img/"+imgs[i]
+			width : 300,
+	    	height: 200,
+	    	image: "img/"+imgs[i],
+	    	opacity:1.0
 		});
 		scrollableView.addView(v);
 	}
 	
-	infoWindow.add(cancelButton);
-	infoWindow.add(okayButton);
+	infoWindow.setToolbar([toolbar_space,cancelButton,toolbar_space,okayButton]);
+	// Ti.API.info(infoWindow);
     infoWindow.add(scrollableView);
-    infoWindow.open();
-    var animationProperties = {delay: 1500, duration: 1000, opacity: 0.1};
-    if (Ti.Platform.osname == "iPhone OS") {
-        animationProperties.transform = Ti.UI.create2DMatrix()
-                                                     .translate(-200,200).scale(0);
-    }
+    infoWindow.open({
+    	modal: true,
+    	modalTransitionStyle: Ti.UI.iPhone.MODAL_TRANSITION_STYLE_COVER_VERTICAL,
+    	modalStyle: Ti.UI.iPhone.MODAL_PRESENTATION_FORMSHEET
+    });
+    // var animationProperties = {delay: 1500, duration: 1000, opacity: 0.1};
+    // if (Ti.Platform.osname == "iPhone OS") {
+        // animationProperties.transform = Ti.UI.create2DMatrix()
+                                                     // .translate(-200,200).scale(0);
+    // }
     // infoWindow.animate(animationProperties, function(){ infoWindow.close(); });
 };

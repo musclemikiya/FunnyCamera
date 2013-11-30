@@ -3,7 +3,7 @@
  */
 (function(){
 	var win = Ti.UI.currentWindow;
-	var imgs = ['christmas.jpg', 'christmas2.jpg', 'christmas.jpg'];
+	var imgs = ['christmas.jpg', 'christmas2.jpg', 'christmas3.gif'];
 	
 	// 画像プレビュー用
 	var scrollableView = Ti.UI.createScrollableView({
@@ -19,13 +19,7 @@
 	    	height: 450,
 	    	backgroundImage: "img/"+imgs[i]
 		});
-		v.add(Ti.UI.createImageView({
-			top: 30,
-			left:200,
-			width: 100,
-			height: 150,
-			backgroundImage: "img/fukuda.jpeg"
-		}));
+		
 		scrollableView.addView(v);
 	}
 	// 作成完了ボタン
@@ -64,6 +58,7 @@
 	camera_roll.addEventListener('click', function(e){
 		Camera.showCameraRoll();
 	});
+	Ti.API.debug(scrollableView);
 	win.setToolbar([toolbar_space,camera,toolbar_space,camera_roll,toolbar_space]);
 	win.add(scrollableView);
 	
