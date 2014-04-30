@@ -28,8 +28,4 @@ dependencies: \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiBuffer.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiBlob.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/LayoutConstraint.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiGradient.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIiOSAdViewProxy.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIViewProxy.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiViewProxy.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiRect.h
+  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiGradient.h

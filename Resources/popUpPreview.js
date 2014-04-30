@@ -8,7 +8,6 @@ exports.showInfo = function(text) {
     	title: 'プレビュー',
         width:300,
         height:400,	
-       	borderRadius: 10,
        	backgroundColor: 'white',
        	opacity: 0.9
     });
@@ -16,7 +15,7 @@ exports.showInfo = function(text) {
     // 画像プレビュー用
 	var scrollableView = Ti.UI.createScrollableView({
 	    width : 300,
-	    height: 200,
+	    height: 400,
 	    cacheSize : 3
 	});
 	
@@ -50,13 +49,13 @@ exports.showInfo = function(text) {
 		);
 	});
 	// infoWindow.add(okayButton);
-	var imgs = ['christmas.jpg', 'christmas2.jpg', 'christmas3.gif'];
+	var imgs = ['001_a.jpg', '001_b.jpg', '001_c.jpg', '001_d.jpg', '001_e.jpg'];
 	
 	for (var i=0;i<imgs.length;i++) {
 		var v = Ti.UI.createImageView({
 			width : 300,
-	    	height: 200,
-	    	image: "img/"+imgs[i],
+	    	height: 400,
+	    	image: "img/album_template/"+imgs[i],
 	    	opacity:1.0
 		});
 		scrollableView.addView(v);

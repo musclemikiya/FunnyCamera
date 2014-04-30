@@ -15,10 +15,6 @@ dependencies: \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/headers/TiCore/TiContextRefPrivate.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/KrollCallback.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/KrollObject.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiAppiOSBackgroundServiceProxy.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/KrollBridge.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/Bridge.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiModule.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUtils.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiColor.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiDimension.h \
@@ -28,8 +24,10 @@ dependencies: \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiBlob.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiApp.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiHost.h \
+  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/Bridge.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiStylesheet.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/XHRBridge.h \
+  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/KrollBridge.h \
+  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiModule.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiRootViewController.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiRootController.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiWindowProxy.h \
@@ -44,5 +42,4 @@ dependencies: \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiTab.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiTabGroup.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIWindow.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiViewController.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiAppiOSLocalNotificationProxy.h
+  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiViewController.h

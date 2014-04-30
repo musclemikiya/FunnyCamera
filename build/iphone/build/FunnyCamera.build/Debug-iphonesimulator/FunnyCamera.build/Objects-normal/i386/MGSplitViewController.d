@@ -27,7 +27,6 @@ dependencies: \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiFile.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiBuffer.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiBlob.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/XHRBridge.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiRootViewController.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiRootController.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiWindowProxy.h \
@@ -42,8 +41,4 @@ dependencies: \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiTab.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiTabGroup.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIWindow.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiViewController.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/MGSplitView/MGSplitViewController.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/MGSplitView/MGSplitDividerView.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/MGSplitView/MGSplitCornersView.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/MGSplitView/MGSplitView.h
+  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiViewController.h

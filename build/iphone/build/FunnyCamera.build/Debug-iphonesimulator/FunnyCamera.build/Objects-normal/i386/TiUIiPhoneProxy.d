@@ -28,7 +28,6 @@ dependencies: \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiStylesheet.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/KrollBridge.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiModule.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/XHRBridge.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiRootViewController.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiRootController.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiWindowProxy.h \
@@ -44,21 +43,4 @@ dependencies: \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiTabGroup.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIWindow.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiViewController.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIiPhoneAnimationStyleProxy.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIiPhoneStatusBarProxy.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIiPhoneRowAnimationStyleProxy.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIiPhoneSystemButtonStyleProxy.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIiPhoneSystemButtonProxy.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIiPhoneProgressBarStyleProxy.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIiPhoneActivityIndicatorStyleProxy.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIiPhoneSystemIconProxy.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIiPhoneScrollIndicatorStyleProxy.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIiPhoneTableViewStyleProxy.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIiPhoneTableViewSeparatorStyleProxy.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIiPhoneTableViewScrollPositionProxy.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIiPhoneTableViewCellSelectionStyleProxy.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIiPhoneNavigationGroupProxy.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIiPadProxy.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIiPadPopoverProxy.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIiPadSplitWindowProxy.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIiPadDocumentViewerProxy.h
+  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiUIiPhoneSystemButtonProxy.h

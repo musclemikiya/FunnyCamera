@@ -52,6 +52,5 @@ dependencies: \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/Bridge.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiStylesheet.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/KrollBridge.h \
-  /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/XHRBridge.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiRootViewController.h \
   /Users/pawpuro10/Documents/Titanium_Studio_Workspace/FunnyCamera/build/iphone/Classes/TiRootController.h

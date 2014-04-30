@@ -1,3 +1,7 @@
+/*
+ * テンプレート選択画面
+ */
+var imgs = ['001_a.jpg', '001_b.jpg', '001_c.jpg', '001_d.jpg', '001_e.jpg'];
 (function(){
 	var win = Titanium.UI.currentWindow;
 	var tableView = Ti.UI.createImageView({
@@ -5,25 +9,24 @@
 	});
 	
 	// サムネイル用画像
-	var imgs = ['christmas.jpg', 'christmas2.jpg', 'christmas2.jpg', 'christmas3.gif', 'christmas3.gif', 'christmas2.jpg'];
-	var tops = [0, 0, 130, 130, 130, 130];
+	var tops = [0, 0, 155, 155, 310, 310];
 	var len = imgs.length;
-	for (var l=0;l<len;l++){
+	for (var l=0;l<len;l++) {
 		if ((l+1)%2 == 0) {
 			var options = {
 				height: 150,
 			    width: 150,
 			    top: tops[l],
 			    right: 5,
-			    image:'img/'+imgs[l]
+			    image:'img/album_template/'+imgs[l]
 			};
-		} else{
+		} else {
 			var options = {
 				height: 150,
 			    width: 150,
 			    top: tops[l],
 			    left: 5,
-			    image:'img/'+imgs[l]
+			    image:'img/album_template/'+imgs[l]
 			};
 		}
 		var image = Ti.UI.createImageView(options);
@@ -85,13 +88,13 @@ var modal;
 		    height: 300,
 		    cacheSize : 3
 		});
-		var imgs = ['christmas.jpg', 'christmas2.jpg', 'christmas3.gif'];
+		var imgs = ['001_a.jpg', '001_b.jpg', '001_c.jpg', '001_d.jpg', '001_e.jpg'];
 		
 		for (var i=0;i<imgs.length;i++) {
 			var v = Ti.UI.createImageView({
 				width : 200,
 		    	height: 250,
-		    	image: "img/"+imgs[i]
+		    	image: "img/album_template/"+imgs[i]
 			});
 			scrollableView.addView(v);
 		}
